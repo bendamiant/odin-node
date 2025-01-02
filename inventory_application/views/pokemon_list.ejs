@@ -8,13 +8,14 @@
 </head>
 <body>
     <h1> Pokemon List</h1>
+    <%- include("links.ejs") %>
     <ul>
         <% pokemonList.forEach((pokemon) => { %>
             <li>
                 <div class="card">
                     <p><%= pokemon.nickname %></p>
                     <a href="/pokemon/<%= pokemon.id %>"> Detail</a>
-                    <form action="/pokemon/<%= pokemon.id %>" method="DELETE">
+                    <form action="/pokemon/<%= pokemon.id %>" method="post">
                         <button type="submit"> Delete</button>
                     </form>
                 </div>

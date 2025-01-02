@@ -8,13 +8,14 @@
 </head>
 <body>
     <h1> Trainer List</h1>
+    <%- include("links.ejs") %>
     <ul>
         <% trainers.map((trainer) => { %>
             <li>
                 <div class="card">
                     <p><%= trainer.name %></p>
                     <a href="/trainers/<%= trainer.id %>"> Detail</a>
-                    <form action="/trainers/<%= trainer.id %>" method="DELETE">
+                    <form action="/trainers/<%= trainer.id %>" method="post">
                         <button type="submit"> Delete</button>
                     </form>
                 </div>

@@ -4,7 +4,7 @@ const trainersController = require('../controllers/trainersController');
 
 trainersRouter.get('/', trainersController.getAllTrainers);
 trainersRouter.get('/:trainer_id', trainersController.getTrainerById);
-trainersRouter.delete('/:trainer_id', trainersController.deleteTrainerById);
+trainersRouter.post('/:trainer_id', trainersController.deleteTrainerById);
 
 
 
