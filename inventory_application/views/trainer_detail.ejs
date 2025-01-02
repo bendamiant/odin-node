@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trainer Detail</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1>Trainer Detail</h1>
+    <div class="card">
+        <div class="entry">
+            <p>id:</p>
+            <%= trainer.id %>
+        </div>
+        <div class="entry">
+            <p>name:</p>
+            <%= trainer.name %>
+        </div>
+        <% pokemonList.map((pokemon) => { %>
+            <li>
+                <div style="border: solid 2px red; padding: 4px;">
+                    <div class="entry">
+                        <p>pokemon_id:</p>
+                        <%= pokemon.pokemon_id %>
+                    </div>
+                    <div class="entry">
+                        <p>nickname:</p>
+                        <%= pokemon.nickname %>
+                    </div>
+                    <div class="entry">
+                        <p>species_id:</p>
+                        <%= pokemon.species_id %>
+                    </div>
+                </div>
+            </li>
+        <% }); %>
+    </div>
+</body>
+</html>

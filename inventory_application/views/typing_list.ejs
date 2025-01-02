@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing List</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1> Typing List</h1>
+    <ul>
+        <% typingList.forEach((type) => { %>
+            <li>
+                <div class="card">
+                    <div class="entry">
+                        <p>typing id: </p>
+                        <p><%= type.id %></p>
+                    </div>
+                    <div class="entry">
+                        <p>name: </p>
+                        <p><%= type.name %></p>
+                    </div>
+                    <a href="/typings/<%= type.id %>/species"> Species of this type</a>
+                    <a href="/typings/<%= type.id %>/pokemon"> Pokemon of this type</a>
+                </div>
+            </li>
+        <% }); %>
+    </ul>
+</body>
+</html>

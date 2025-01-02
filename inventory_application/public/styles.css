@@ -1,0 +1,17 @@
+.card {
+    border-radius: 36px;
+    background: #e0e0e0;
+    box-shadow:  22px 22px 44px #a1a1a1,
+                -22px -22px 44px #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px;
+    margin: 8px;
+}
+
+.entry {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
