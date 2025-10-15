@@ -14,7 +14,6 @@ exports.usersCreateGet = (req, res) => {
   });
 };
 
-console.log("hello");
 // Our post endpoint before adding validation
 
 // exports.usersCreatePost = (req, res) => {
